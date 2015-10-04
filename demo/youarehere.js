@@ -1,3 +1,4 @@
+// Element creation
 var createProgressBar = function() {
   var newProgressBar = document.createElement("div");
   newProgressBar.id = 'progressBar';
@@ -6,6 +7,7 @@ var createProgressBar = function() {
 
 document.addEventListener('DOMContentLoaded', createProgressBar());
 
+// Progress calculations and setting
 var calculateProgress = function() {
   var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
   var scrolledPixels = document.documentElement.scrollTop;
