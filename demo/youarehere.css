@@ -10,5 +10,4 @@
   height: 3px;
   width: 0%;
   z-index: 9999;
-  transition: width .3s cubic-bezier(1, 0, 0, 1);
 }
