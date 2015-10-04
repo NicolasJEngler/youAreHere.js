@@ -4,7 +4,7 @@ var createProgressBar = function() {
   document.body.appendChild(newProgressBar);
 };
 
-document.addEventListener('DOMContentLoaded', createProgressBar);
+document.addEventListener('DOMContentLoaded', createProgressBar());
 
 var calculateProgress = function() {
   var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
@@ -25,8 +25,16 @@ var calculateProgress = function() {
 
 document.addEventListener('scroll', calculateProgress);
 
-// Create function that accepts an object as parameter with
-  // Height of bar
-  // Position of bar (top or bottom)
-  // Color of bar
-  // Easing
+// Settings function
+var youAreHere = function(settings) {
+  var progressBar = document.getElementById('progressBar');
+  
+  progressBar.style.height = settings.height || '3px';
+  progressBar.style.background = settings.color || '#472836';
+  progressBar.style.color = settings.color || '#472836';
+  if (settings.easing === true) {
+    progressBar.style.transition = 'width .3s cubic-bezier(0.77, 0, 0.175, 1)';
+  } else {
+    progressBar.style.transition = 'none';
+  }
+}

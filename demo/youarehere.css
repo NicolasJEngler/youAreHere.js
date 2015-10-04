@@ -1,8 +1,6 @@
 #progressBar {
   position: fixed;
   top: 0;
-  right: auto;
-  bottom: auto;
   left: 0;
   background: #472836;
   color: #472836;
@@ -10,4 +8,5 @@
   height: 3px;
   width: 0%;
   z-index: 9999;
+  pointer-events: none;
 }
