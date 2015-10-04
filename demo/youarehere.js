@@ -3,6 +3,20 @@ var createProgressBar = function() {
   var newProgressBar = document.createElement("div");
   newProgressBar.id = 'progressBar';
   document.body.appendChild(newProgressBar);
+  
+  newProgressBar.style.height = '3px';
+  newProgressBar.style.width = 0;
+  newProgressBar.style.background = '#472836';
+  newProgressBar.style.color = '#472836';
+  newProgressBar.style.top = 0;
+  newProgressBar.style.right = 'auto';
+  newProgressBar.style.bottom = 'auto';
+  newProgressBar.style.left = 0;
+  newProgressBar.style.position = 'fixed';
+  newProgressBar.style.boxShadow = '0 0 3px';
+  newProgressBar.style.zIndex = 9999;
+  newProgressBar.style.pointerEvents = 'none';
+  
 };
 
 document.addEventListener('DOMContentLoaded', createProgressBar());
