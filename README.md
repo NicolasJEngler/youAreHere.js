@@ -7,13 +7,13 @@ A lightweight, vanilla JS, scroll position indicator.
 ### Usage
 The only thing you should do is place the JS file and link it in your document like this:
 
-```
+```html
 <script src="js/youarehere.min.js"></script>
 ```
 
 Some of the scrollbar properties can be set through a function like this:
 
-```
+```javascript
 youAreHere({
   height: '5px', // Accepts values in px, %, and rem (if the root font-size has been properly set)
   color: '#2e2e2e', // Accepts HEX, RGB and RGBA values
