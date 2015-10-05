@@ -21,11 +21,11 @@ youAreHere({
 });
 ```
 
-Property | Value
-------------------------------------------
-height   | _(string)_ 3px by _default_
-color    | _(string)_ #472836 by _default_
-easing   | _(boolean)_ false by _default_
+| Property | Value                            |
+|----------|----------------------------------|
+| height   | _(string)_ 3px by _default_      |
+| color    | _(string)_ #472836 by _default_  |
+| easing   | _(boolean)_ false by _default_   |
 
 ---
 Please keep in mind that this is my first JS-only plugin, so there's going to be a ton of things to improve. Of course pull requests and feedback are both welcome!
