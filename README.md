@@ -1,6 +1,8 @@
 # youAreHere.js
 A lightweight, vanilla JS, scroll position indicator.
 
+#### Check this plugin in action right here: (http://nicolasjengler.github.io/youAreHere.js/demo/)[http://nicolasjengler.github.io/youAreHere.js/demo/]
+
 **youAreHere.js** is a lightweight, dependency-free, vanilla JS plugin to indicate the user's current scroll position on a website. It is currently in alpha state, and it should be used with that in mind. 
 
 
