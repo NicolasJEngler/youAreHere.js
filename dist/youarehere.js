@@ -23,16 +23,9 @@ document.addEventListener('DOMContentLoaded', createProgressBar());
 
 // Progress calculations and setting
 var calculateProgress = function() {
-  var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-  var scrolledPixels = document.documentElement.scrollTop;
-  var fullHeight = 0;
+  var scrolledPixels = document.documentElement.scrollTop || document.body.scrollTop;
+  var fullHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
   var viewportHeight = window.innerHeight;
-  
-  if (isFirefox === true) {
-    fullHeight = document.documentElement.scrollHeight;
-  } else {
-    fullHeight = document.body.scrollHeight;
-  }
   
   currentProgress = scrolledPixels / (fullHeight - viewportHeight ) * 100;
   
